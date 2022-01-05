@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": "app/javascript",
+    "paths": {
+      "@actions/*": ["actions/*"],
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@containers/*": ["containers/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@reducers/*": ["reducers/*"],
+      "@sagas/*": ["sagas/*"],
+      "@tools/*": ["tools/*"],
+    },
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "ES6",
+    "lib": ["ES6", "DOM", "ES2019"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "target": "ES6",
+    "jsx": "react",
+    "forceConsistentCasingInFileNames": true,
+    "alwaysStrict": true,
+    "typeRoots": [
+      "app/javascript/app/typings",
+      "./node_modules/@types",
+    ]
+  },
+  "include": [
+    "app/javascript/app/**/*",
+    "app/javascript/appShop/**/*",
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules",
+    "vendor",
+    "public"
+  ],
+  "compileOnSave": false
+}
